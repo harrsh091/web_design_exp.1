@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Your Name</a>
+    <button id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Hi, I'm Harsh Mittal.<br>I build things for the web.</h1>
+      <p>Computer science student learning web development, version control and cloud hosting.</p>
+      <a class="button" href="#projects">See my projects</a>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>Write two or three sentences about yourself here: what you study, what you enjoy building, and what you want to learn next.</p>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Portfolio website</h3>
+          <p>This site, hosted on GitHub Pages.</p>
+        </article>
+        <article class="project">
+          <h3>To-do app</h3>
+          <p>A small JavaScript app that saves tasks in the browser.</p>
+        </article>
+        <article class="project">
+          <h3>Weather checker</h3>
+          <p>Shows the forecast for any city using a public API.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
